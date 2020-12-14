@@ -2,8 +2,8 @@ package com.hxb.pdascancode;
 
 public interface Declare {
 
-    String Action = "android.intent.ACTION_DECODE_DATA";
+    String Action = "nlscan.action.SCANNER_RESULT";
 
-    String StringExtra = "barcode_string";
+    String StringExtra = "SCAN_BARCODE1";
 
 }

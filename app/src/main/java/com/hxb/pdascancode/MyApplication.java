@@ -13,7 +13,7 @@ import android.util.Log;
  */
 public class MyApplication extends Application implements Application.ActivityLifecycleCallbacks {
 
-    private static String topActivity;
+    private static String topActivity = "com.hxb.pdascancode.MainActivity";
 
     private static Context mContext;
 
@@ -55,7 +55,7 @@ public class MyApplication extends Application implements Application.ActivityLi
 
     @Override
     public void onActivityResumed(Activity activity) {
-        Log.i("APP",activity.getClass().getName());
+        Log.i("APP------------",activity.getClass().getName());
         topActivity = activity.getClass().getName();
     }
 
