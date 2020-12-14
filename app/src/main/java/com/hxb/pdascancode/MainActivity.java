@@ -51,8 +51,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        String url = "http://10.0.5.73:8081/";
+        String url = "http://10.0.10.244:8902";
         final WebView webView = (WebView) findViewById(R.id.webView);
         webView.loadUrl(url);
         // 这行代码一定加上否则效果不会出现
@@ -72,10 +71,6 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
-
-
-
-
 
         // 监听输入框（已经隐藏）
         et = findViewById(R.id.et);
